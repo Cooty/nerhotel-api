@@ -4,6 +4,7 @@ import { rateLimiter } from "hono-rate-limiter";
 import getAllPlaces from "./api/get-all-places";
 import getPlaceById from "./api/get-place-by-id";
 import searchPlaces from "./api/search-places";
+import getPlacesByPersonName from "./api/get-places-by-person-name";
 
 import clearCache from "./webhooks/clear-cache";
 
@@ -20,6 +21,10 @@ app.use(
 
 api.route("/places/search", searchPlaces);
 api.route("/places/:id{[0-9]+}", getPlaceById);
+api.route(
+  "/places/person/:name{[a-zA-ZáéíóúüűöőñäßÁÉÍÓÚÜŰÑÄÖŐ_\\s-]+}",
+  getPlacesByPersonName,
+);
 api.route("/places", getAllPlaces);
 
 app.route("/api", api);
