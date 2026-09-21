@@ -25,7 +25,10 @@ app.post("/", async (c) => {
 
     c.executionCtx.waitUntil(c.env.DATA_CACHE.delete(resolvedKey));
 
-    return c.json({ message: `${resolvedKey} was deleted from the cache` });
+    const message = `${resolvedKey} was deleted from the cache`;
+    console.log(message);
+
+    return c.json({ message });
   } catch (error) {
     console.error(error);
     const isError = error instanceof Error;
