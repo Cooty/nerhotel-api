@@ -33,15 +33,21 @@ A helyi fejlesztéshez használt környetei változókat a `dev.vars` fájlba ke
 
 ### Deployment
 
-Ehhez szükséged lesz egy [CloudFlare](https://www.cloudflare.com/) accountra (a command line tool meg fogja kérni hogy jelentkezz be a böngésződből).
+A deployment automatikusan történik, amint pusholunk a `master` branchbe, lsd. `.gitbub/workflows/deploy.yml`.
 
-```txt
-npm run deploy
-```
+A repository beállításaiban lehet megadni a Cloudflare API kulcsot, melyet a GitHub Action használ.
+
+- Ehhez szükséged lesz egy [CloudFlare](https://www.cloudflare.com/) accountra.
+- A Cloudflare felhasználói felületén kattints jobb felső sarokban lévő felhasználó ikonra, majd **Profile** és a bal oldali menüben kattints az **API Tokens**-re.
+- Generálj egy tokent, aminek van jogosultsága szerkeszteni a Worker scripteket (_permissions: **Account | Workers Scripts | Edit.**_)
+- A GitHub repó beállításaiban (**Settings** fül), keresd meg a **Secrets and variables**-t és azon belül az **Actions**-t.
+- Adj hozzá egy új secretet `CLOUDFLARE_API_TOKEN` néven \* és másold be ide a Cloudflare-en imént generált API tokent.
+
+\* A secret neve természetesen _bármi_ lehet, de ügyelj rá, hogy utána ugyanez legyen átadva a `deploy.yml`-ben, a [`cloudflare/wrangler-action@v3`](https://github.com/cloudflare/wrangler-action/tree/v3/) actionek, mint `apiToken` paraméter
 
 ### Típusok
 
-[A Worker konfigurációja alapján a típusok generálásához vagy szinkronizálásához futtasd a következő parancsot:](https://developers.cloudflare.com/workers/wrangler/commands/#types):
+A Worker konfigurációja alapján [a típusok generálásához vagy szinkronizálásához](https://developers.cloudflare.com/workers/wrangler/commands/#types) futtasd a következő parancsot:
 
 ```txt
 npm run cf-typegen
