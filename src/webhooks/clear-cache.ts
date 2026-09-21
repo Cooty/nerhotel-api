@@ -6,7 +6,7 @@ const app = new Hono<{ Bindings: CloudflareBindings }>();
 
 app.post("/", async (c) => {
   const secret = c.req.header("X-Webhook-Secret");
-  if (secret !== c.env.WEBHOOK_SECRET) {
+  if (!secret || secret !== c.env.WEBHOOK_SECRET) {
     return c.json({ message: "Unauthorized" }, 401);
   }
 
