@@ -7,7 +7,10 @@ Ahelyett, hogy közvetlenül a kliensoldali JavaScript töltené le táblázatot
 Ha szükséges ez az alkalmazás használható általános API gatewayként is más REST API-k cache-elésére, összegyüjtésére, secretek elfedésére, melyeket a kliensben használni kívánunk (pl. K-Monitor Sajtóadatbázis API hívások [itt](https://www.nerhotel.hu/hu/press-releases) vagy a [személyek adatainál](https://www.nerhotel.hu/hu/person/M%C3%A9sz%C3%A1ros%20L%C5%91rinc))
 
 A cache kiürítéséhez meg kell hívni egy webhookot (`/webhooks/clear-cache`), ezt egy [Google AppScriptben](https://developers.google.com/apps-script) implementált automatizáció hivatott megtenni, minden alkalommal, amikor az adatok változnak. Az AppScript a publikus Google Sheetshez kapcsolódik és csak az írási jogkörrel rendelkező felhasználók láthatják.
+
 A scriptnek tartalmaznia kell egy megosztott titkos kulcsot, ami ismert kell hogy legyen szerver oldali réteg számára is, hogy ne tudja bárki (vagy bármi) meghívni a webhookunkat.
+
+A scriptet az [app-scripts/handle-on-edit.gs](app-scripts/handle-on-edit.gs) alatt találod (mivel ezt a Google AppScripts UI-ba kell bekopipésztelni így a legfrissebb verziót érdemes kézzel szinkronban tartani azzal, amit ebben a repóban tárolunk).
 
 ## Végpontok
 
