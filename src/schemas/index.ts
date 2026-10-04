@@ -1,36 +1,36 @@
-import { z } from "zod";
+import { z } from "zod"
 
-const nullableStringSchema = z.string().nullable();
+const nullableStringSchema = z.string().nullable()
 
-const optionalNullableUrlSchema = z.url().nullish();
+const optionalNullableUrlSchema = z.url().nullish()
 
 export const personSchema = z.object({
   name: z.string().min(1),
   link: optionalNullableUrlSchema,
-  id: z.string().optional().nullable(),
-});
+  id: z.string().optional().nullable()
+})
 
 export const localizedPropertiesSchema = z.object({
   name: nullableStringSchema,
   link: optionalNullableUrlSchema,
   details: nullableStringSchema,
-  type: nullableStringSchema,
-});
+  type: nullableStringSchema
+})
 
 export const companySchema = z.object({
   name: nullableStringSchema,
-  link: optionalNullableUrlSchema,
-});
+  link: optionalNullableUrlSchema
+})
 
 export const coordinatesSchema = z.tuple([
   z.number().min(-90).max(90), // latitude
-  z.number().min(-180).max(180), // longitude
-]);
+  z.number().min(-180).max(180) // longitude
+])
 
 export const geometrySchema = z.object({
   type: z.literal("Point"),
-  coordinates: coordinatesSchema,
-});
+  coordinates: coordinatesSchema
+})
 
 export const placePropertiesSchema = z.object({
   id: z.string().regex(/^[1-9]\d*$/),
@@ -52,13 +52,13 @@ export const placePropertiesSchema = z.object({
   en: localizedPropertiesSchema,
   de: localizedPropertiesSchema,
 
-  picture: optionalNullableUrlSchema,
-});
+  picture: optionalNullableUrlSchema
+})
 
 export const placeSchema = z.object({
   type: z.literal("Feature"),
   properties: placePropertiesSchema,
-  geometry: geometrySchema,
-});
+  geometry: geometrySchema
+})
 
-export const placesSchema = z.array(placeSchema);
+export const placesSchema = z.array(placeSchema)

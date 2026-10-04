@@ -1,1 +1,1 @@
-export * from "./get-all-places-affiliated-with-person";
+export * from "./get-all-places-affiliated-with-person"

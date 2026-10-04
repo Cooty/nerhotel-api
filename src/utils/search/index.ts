@@ -1,3 +1,3 @@
-import findProperty from "./find-property";
+import findProperty from "./find-property"
 
-export { findProperty };
+export { findProperty }
