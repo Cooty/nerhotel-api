@@ -1,4 +1,4 @@
-import type { Person, Places, Place } from "../../types"
+import type { Person, Places } from "../../types"
 import { placeSchema } from "../../schemas"
 
 function cleanPersonData(person: Person) {
