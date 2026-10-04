@@ -39,10 +39,10 @@ A biztonság érdekében a webhook URL-jét és a titkos azonosító kulcsot **n
 2. Görgess le a **Script Properties** szekcióhoz.
 3. Kattints az **Add script property** gombra, és vedd fel az alábbi két kulcsot:
 
-| Property Name    | Érték                                                   | Leírás                                                               |
-| :--------------- | :------------------------------------------------------ | :------------------------------------------------------------------- |
-| `WEBHOOK_URL`    | `https://your-worker.workers.dev/webhooks/cache-buster` | A Cloudflare Worker teljes webhook elárési útvonala.                 |
-| `WEBHOOK_SECRET` | `a_te_titkos_webhook_kulcsod`                           | Az a titkos string, ami megegyezik a Worker környezeti változójával. |
+| Property Name    | Érték                                                  | Leírás                                                               |
+| :--------------- | :----------------------------------------------------- | :------------------------------------------------------------------- |
+| `WEBHOOK_URL`    | `https://your-worker.workers.dev/webhooks/clear-cache` | A Cloudflare Worker teljes webhook elárési útvonala.                 |
+| `WEBHOOK_SECRET` | `a_te_titkos_webhook_kulcsod`                          | Az a titkos string, ami megegyezik a Worker környezeti változójával. |
 
 4. Kattints a **Save script properties** gombra.
 
