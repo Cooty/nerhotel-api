@@ -16,7 +16,7 @@ A scriptet az [app-scripts/handle-on-edit.gs](app-scripts/handle-on-edit.gs) ala
 
 - `/api/places`: **[GET]** Visszadja a táblázat összes adatsorát, GEO-JSON kompatibilis objektumként.
 - `/api/places/:id`: **[GET]** Visszaad egy sort a táblázatból, objektumá transzformálva, az `id` paraméter alapján. Az `id`-nak egyeznie kell a `pl_id` oszlop értékével.
-- `/api/places/:id`: **[GET]** A query paraméterként átadott `q` sztring szerint keres az összes sorban és (illetve annak bizonyos oszlopaiban), és a kereső logika szerint passzoló sorokat adja vissza
+- `/api/places/search?q=<QUERY>`: **[GET]** A query paraméterként átadott `q` sztring szerint keres az összes sorban és (illetve annak bizonyos oszlopaiban), és a kereső logika szerint passzoló sorokat adja vissza
 - `/webhooks/clear-cache` **[POST]** Törli a cache-t. Ha a JSON body-ban küldünk egy `key` paramétert, akkor megpróbálja az annak megfelelő cache bejegyzést törölni (már ha létezik), ha nem küldünk semmit a body-ban, akkor az `AppConfig.cacheKeys.allPlaces` konstansnak megfelelő értéket fogja törölni. Kulcsok törléséről további információért lásd a [KV storage dokumentációját](https://developers.cloudflare.com/kv/api/delete-key-value-pairs/)! Azonosításként egy `X-Webhook-Secret` headert vár, amiben a megosztott titkos kulcsot kell átadni.
 
 ## Fejlesztés helyi gépen
@@ -62,5 +62,5 @@ A `Hono` példány létrehozásakor generikus paraméterként add meg a `Cloudfl
 
 ```ts
 // src/index.ts
-const app = new Hono<{ Bindings: CloudflareBindings }>();
+const app = new Hono<{ Bindings: CloudflareBindings }>()
 ```
