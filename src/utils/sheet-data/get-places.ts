@@ -138,6 +138,8 @@ export function getPlaces(csvRowsAsObjects: Record<string, string>[]): Places {
 
     if (validation.success) {
       places.push(validation.data)
+    } else {
+      console.error(validation.error)
     }
   })
 
