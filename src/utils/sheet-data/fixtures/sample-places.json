@@ -1,0 +1,170 @@
+[
+  {
+    "type": "Feature",
+    "properties": {
+      "id": "329",
+      "address": "Budapest, Naphegy utca 67., 1016",
+      "company": {
+        "name": "SunHill Bistro Kft.",
+        "link": null
+      },
+      "name": "Sunhill Bistro",
+      "city": "Budapest",
+      "type": "étterem",
+      "link": "https://mfor.hu/cikkek/makro/mar-senki-nem-szolhat-bele-hogy-meszaros-lorinc-milyen-pizzat-sut-a-celebeknek-a-naphegyi-ettermeben.html",
+      "mainOligarch": [
+        {
+          "name": "Mészáros Lőrinc",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/meszaros-lorinc",
+          "id": "3406"
+        }
+      ],
+      "mainCEO": [],
+      "oligarchs": [
+        {
+          "name": "Mészáros Lőrinc",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/meszaros-lorinc",
+          "id": "3406"
+        }
+      ],
+      "ceos": [
+        {
+          "name": "Czene Ferenc",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/czene-ferenc",
+          "id": "d8c6a377-bae6-4834-b365-fa474cbfe434"
+        }
+      ],
+      "date": "2024.02.13",
+      "details": "A naphegyi étterem Mészáros Lőrinc érdekeltségének, a Talentis Groupnak a tulajdonában van.",
+      "en": {
+        "name": null,
+        "link": null,
+        "details": "The bistro, located in the 1st district of Budapest is owned by the company of Lőrinc Mészáros, Hungary’s richest person and PM Orbán’s close friend. In the same building, Oxygen Wellness is also co-owned by Mészáros.",
+        "type": "restaurant"
+      },
+      "de": {
+        "name": null,
+        "link": null,
+        "details": null,
+        "type": "Restaurant"
+      },
+      "picture": "https://welovebudapest.com/i/9d/230919-sunhillbistro-kma14.exact1980w.JPG"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [47.49179003, 19.03717164]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": "58",
+      "address": "Budapest, Erzsébet tér 11-13 ., 1051",
+      "company": {
+        "name": "Fröccsterasz Kft.",
+        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/froccsterasz-kft"
+      },
+      "name": "Fröccsterasz",
+      "city": "Budapest",
+      "type": "étterem",
+      "link": "http://valasz.hu/itthon/elkelt-orban-rahel-belvarosi-etterme-120166",
+      "mainOligarch": [
+        {
+          "name": "Varga Lajos",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/varga-lajos",
+          "id": "4661"
+        }
+      ],
+      "mainCEO": [],
+      "oligarchs": [
+        {
+          "name": "Varga Lajos",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/varga-lajos",
+          "id": "4661"
+        }
+      ],
+      "ceos": [],
+      "date": "2022.07.12",
+      "details": "Varga cége a Valton-Sec. Kft. rendszeresen biztosítja a Fidesz és a kormányzat rendezvényeit (pl. stadionok, vizes vébé, Városliget).",
+      "en": {
+        "name": null,
+        "link": null,
+        "details": "The owner of the place, Lajos Varga, also owns Valton-Sec, the favourite security company of Fidesz, and is often tasked with protecting party and state events and projects.",
+        "type": "restaurant"
+      },
+      "de": {
+        "name": null,
+        "link": null,
+        "details": null,
+        "type": "Restaurant"
+      },
+      "picture": "https://froccsterasz.hu/wp-content/uploads/2021/12/Froccsterasz-galeria-1xs.jpg"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [47.498737, 19.053571]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": "13",
+      "address": "St. Lorenzen ob Murau, St. Lorenzen 6, 8861",
+      "company": {
+        "name": "Peter’s Consulting Kft.",
+        "link": null
+      },
+      "name": "Alpenblick Hotel",
+      "city": "St. Lorenzen ob Murau",
+      "type": "szálloda",
+      "link": "https://hvg.hu/gazdasag/20230124_BDPST_Zrt_Tiborcz_Istvan_Orban_Viktor_veje_Ausztria_hotel_Peters_Consulting_Kft_Zentai_Peter",
+      "mainOligarch": [
+        {
+          "name": "Zentai Péter",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/zentai-peter",
+          "id": "7896"
+        }
+      ],
+      "mainCEO": [
+        {
+          "name": "Zentai Péter",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/zentai-peter",
+          "id": "7896"
+        }
+      ],
+      "oligarchs": [
+        {
+          "name": "Zentai Péter",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/zentai-peter",
+          "id": "7896"
+        }
+      ],
+      "ceos": [
+        {
+          "name": "Zentai Péter",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/zentai-peter",
+          "id": "7896"
+        }
+      ],
+      "date": "2023.06.21",
+      "details": "A korábban Mészáros Lőrinc féle Hunguest Hotelshez tartozó 43 családi szobás, 4 csillagos szálláshelyet 2021. októberben vette át Tiborcz István BDPST-je. A kormányfő vejétől Zentai Péter vásárolta meg.",
+      "en": {
+        "name": null,
+        "link": null,
+        "details": "István Tiborcz, son-in-law of PM Orbán, acquired the hotel in October 2021 through his company BDPST from Hunguest Hotels, which is owned by Orbán's close friend and Hungary's richest man Lőrinc Mészáros. From the Prime Minister's son-in-law it was bought by Péter Zentai.",
+        "type": "hotel"
+      },
+      "de": {
+        "name": null,
+        "link": null,
+        "details": "István Tiborcz, der Schwiegersohn von Premierminister Orbán, erwarb das Hotel Oktober 2021 über sein Unternehmen BDPST von Hunguest Hotels, das Orbáns engem Freund und Ungarns reichstem Mann Lőrinc Mészáros gehört. Im Anschluss wurde es von Péter Zentai gekauft.",
+        "type": "Hotel"
+      },
+      "picture": "https://alpenblickkreischberg.at/wp-content/uploads/2019/12/AB-fot%C3%B3z%C3%A1s-6_au%C3%9Fen-winter.jpg"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [47.0994512, 14.0902618]
+    }
+  }
+]
