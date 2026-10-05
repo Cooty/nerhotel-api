@@ -1,0 +1,391 @@
+[
+  {
+    "type": "Feature",
+    "properties": {
+      "id": "1",
+      "address": "Budapest, Andrássy út 8., 1061",
+      "company": {
+        "name": "A8 Palace Hotel Zrt.",
+        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/a8-palace-hotel-zrt"
+      },
+      "name": "Hotel Moments",
+      "city": "Budapest",
+      "type": "szálloda",
+      "link": "https://24.hu/belfold/2018/09/10/garancsi-csanyi-hernadi-andrassy-palota/",
+      "mainOligarch": [
+        {
+          "name": "Csányi Sándor",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/csanyi-sandor",
+          "id": "228"
+        },
+        {
+          "name": "Hernádi Zsolt",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/hernadi-zsolt",
+          "id": "220"
+        },
+        {
+          "name": "Garancsi István",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/garancsi-istvan",
+          "id": "226"
+        }
+      ],
+      "mainCEO": [],
+      "oligarchs": [
+        {
+          "name": "Csányi Sándor",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/csanyi-sandor",
+          "id": "228"
+        },
+        {
+          "name": "Hernádi Zsolt",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/hernadi-zsolt",
+          "id": "220"
+        },
+        {
+          "name": "Garancsi István",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/garancsi-istvan",
+          "id": "226"
+        }
+      ],
+      "ceos": [
+        {
+          "name": "Molnár Tibor Lajosné",
+          "link": null,
+          "id": "d6be5bad-574f-4305-adfc-1d608f7b4641"
+        },
+        {
+          "name": "Varga Ferenc",
+          "link": null,
+          "id": "5f2290d5-e30d-41ee-8371-563ea450dddf"
+        },
+        {
+          "name": "Mészáros Mónika Krisztina",
+          "link": null,
+          "id": "d6ac0fd0-30c3-4507-a3fc-53387bd4abd1"
+        }
+      ],
+      "date": "2026-03-12",
+      "details": "A korábban önkormányzati ingatlanok felvásárlásával jutott hozzá a kormányzattal jó viszonyt ápoló Csányi-Garancsi-Hernádi trió az Andrássy úti épülethez",
+      "en": {
+        "name": null,
+        "link": null,
+        "details": "A shared project between 3 of the most important government-friendly businessmen, Sándor Csányi of OTP, Zsolt Hernádi of MOL and István Garancsi, a close friend of Orbán. The buildings were owned by the local government before being purchased by Garancsi's interests.",
+        "type": "hotel"
+      },
+      "de": {
+        "name": null,
+        "link": null,
+        "details": "Hotel Moments ist ein gemeinsames Projekt von den drei wichtigsten regierungsfreundlichen Geschäftsleuten, Sándor Csányi von der Bank OTP, Zsolt Hernádi von dem Öl- und Erdgasunternehmen MOL und István Garancsi, einem engen Freund von Orbán. Die Gebäude befanden sich im Besitz der lokalen Regierung, bevor sie von den drei Unternehmern aufgekauft wurden.",
+        "type": "Hotel"
+      },
+      "picture": "https://hotelmomentsbudapest.hu/uploads/image/slider/5/053.jpg"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [47.501047, 19.05665]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": "2",
+      "address": "Budapest, Andrássy út 116., 1062",
+      "company": {
+        "name": "Alice Hotel Kft.",
+        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/alice-hotel-kft"
+      },
+      "name": "Hotel Alice",
+      "city": "Budapest",
+      "type": "szálloda",
+      "link": "https://444.hu/2022/08/31/tiborcz-istvan-eladta-az-andrassy-uti-butikhoteljet",
+      "mainOligarch": [
+        {
+          "name": "Paár Attila",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/paar-attila",
+          "id": "3870"
+        }
+      ],
+      "mainCEO": [
+        {
+          "name": "Somlyai Zoltán",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/somlyai-zoltan",
+          "id": "5349"
+        }
+      ],
+      "oligarchs": [
+        {
+          "name": "Paár Attila",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/paar-attila",
+          "id": "3870"
+        }
+      ],
+      "ceos": [
+        {
+          "name": "Somlyai Zoltán",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/somlyai-zoltan",
+          "id": "5349"
+        },
+        {
+          "name": "Pápai Csaba",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/papai-csaba",
+          "id": "5747"
+        }
+      ],
+      "date": "2024.11.24",
+      "details": "Az Andrássy úti butikhotel felújítására másfél milliárd forintos hitelt vett fel a miniszterelnök vejének érdekeltségébe tartozó társaság. Az épületet Tiborcz üzlettársának, Paár Attila cége szerezte meg 2017-ben egy állami árverésen. Az üzemeltetést 2022 nyarán adta át Tiborcz cége Paárénak.",
+      "en": {
+        "name": null,
+        "link": null,
+        "details": "The boutique hotel was purchased by Attila Paár, a business partner of Orbán's son-in-law István Tiborcz, on a state auction in 2017, after taking out a loan of HUF 1.5 billion. Operation of the hotel was handed over from Tiborcz's company to Paár's in 2022.",
+        "type": "hotel"
+      },
+      "de": {
+        "name": null,
+        "link": null,
+        "details": "Das Boutique-Hotel wurde 2017 von Attila Paár, einem Geschäftspartner von Orbáns Schwiegersohn István Tiborcz, auf einer staatlichen Auktion erworben, nachdem er einen Kredit in Höhe von 1,5 Milliarden HUF aufgenommen hatte. Der Betrieb des Hotels wurde im Jahr 2022 von Tiborcz' Unternehmen an Paárs Firma übergeben.",
+        "type": "Hotel"
+      },
+      "picture": "https://welovebudapest.com/i/78/alice-hotel3.exact1980w.JPG"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [47.512832, 19.074034]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": "6",
+      "address": "Sopron, Sopron, Várkerület 25, 9400",
+      "company": {
+        "name": "Arcus Kereskedelmi Kft.",
+        "link": null
+      },
+      "name": "Arcus kávézó",
+      "city": "Sopron",
+      "type": "étterem",
+      "link": null,
+      "mainOligarch": [
+        {
+          "name": "Simon István",
+          "link": null,
+          "id": "969"
+        }
+      ],
+      "mainCEO": [],
+      "oligarchs": [
+        {
+          "name": "Simon István",
+          "link": null,
+          "id": "969"
+        }
+      ],
+      "ceos": [
+        {
+          "name": "Zsidó László",
+          "link": null,
+          "id": "f104d080-929b-41dc-94d9-5b9d212e4a6e"
+        }
+      ],
+      "date": "2021.11.17",
+      "details": "Jelenleg Simon István tulajdonában áll a Sopronban két vendéglátóhelyet üzemeltető cég, amiben sokáig felesége, Molnár Ágnes, Sopron országgyűlési képviselője is tulajdonos volt.",
+      "en": {
+        "name": null,
+        "link": null,
+        "details": "The company which runs two restaurants in Sopron is now owned by István Simon, but previously his wife, MP Ágnes Molnár of Fidesz was also part of the ownership structure.",
+        "type": "restaurant"
+      },
+      "de": {
+        "name": null,
+        "link": null,
+        "details": "Das Unternehmen, das zwei Lokale, einen Rastplatz und ein Café in Sopron betreibt, gehört derzeit István Simon, und viele Jahre lang war auch seine Frau Ágnes Molnár, Abgeordnete für Sopron, Anteilseignerin.",
+        "type": "Restaurant"
+      },
+      "picture": "https://10619-2.s.cdn12.com/rests/original/321_509939393.jpg"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [47.68637323, 16.59341738]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": "7",
+      "address": "Sopron, Bécsi út, 9400",
+      "company": {
+        "name": "Arcus Kereskedelmi Kft.",
+        "link": null
+      },
+      "name": "Arcus pihenőhely",
+      "city": "Sopron",
+      "type": "étterem",
+      "link": "https://www.youtube.com/watch?v=gj2l2YPSAxE",
+      "mainOligarch": [
+        {
+          "name": "Simon István",
+          "link": null,
+          "id": "969"
+        }
+      ],
+      "mainCEO": [],
+      "oligarchs": [
+        {
+          "name": "Simon István",
+          "link": null,
+          "id": "969"
+        }
+      ],
+      "ceos": [
+        {
+          "name": "Zsidó László",
+          "link": null,
+          "id": "20f12fcf-6c6a-444d-ab90-5fa03caf6174"
+        }
+      ],
+      "date": "2021.11.17",
+      "details": "Jelenleg Simon István tulajdonában áll a Sopronban két vendéglátóhelyet üzemeltető cég, amiben sokáig felesége, Molnár Ágnes, Sopron országgyűlési képviselője is tulajdonos volt.",
+      "en": {
+        "name": null,
+        "link": null,
+        "details": "The company which runs two restaurants in Sopron is now owned by István Simon, but previously his wife, MP Ágnes Molnár of Fidesz was also part of the ownership structure.",
+        "type": "restaurant"
+      },
+      "de": {
+        "name": null,
+        "link": null,
+        "details": "Das Unternehmen, das zwei Lokale, einen Rastplatz und ein Café, in Sopron betreibt, gehört derzeit István Simon, und viele Jahre lang war auch seine Frau Ágnes Molnár, Abgeordnete für Sopron, Anteilseignerin.",
+        "type": "Restaurant"
+      },
+      "picture": "https://i2.wp.com/cyberpress.hu/wp-content/uploads/2020/08/Arcus.jpg?resize=678%2C381&ssl=1"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [47.71601037, 16.57093309]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": "47",
+      "address": "Villány, Ady fasor 2, 7773",
+      "company": {
+        "name": "Csányi Pincészet Zrt.",
+        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/csanyi-pinceszet-zrt"
+      },
+      "name": "Csányi borbolt",
+      "city": "Villány",
+      "type": "borászat",
+      "link": null,
+      "mainOligarch": [
+        {
+          "name": "Csányi Sándor",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/csanyi-sandor",
+          "id": "228"
+        }
+      ],
+      "mainCEO": [],
+      "oligarchs": [
+        {
+          "name": "Csányi Sándor",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/csanyi-sandor",
+          "id": "228"
+        },
+        {
+          "name": "Kocsis Istvánné",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/kocsis-istvanne",
+          "id": "5cce8f0a-305a-406a-8a1e-ce8210619603"
+        },
+        {
+          "name": "Csányi Erika",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/csanyi-erika",
+          "id": "1ad3036b-7054-472b-b68b-dc0b0863388d"
+        }
+      ],
+      "ceos": [
+        {
+          "name": "Csányi Péter",
+          "link": null,
+          "id": "ca03ded3-4ab8-40b0-ac7f-9a1ee46e8a0b"
+        },
+        {
+          "name": "Romsics László",
+          "link": null,
+          "id": "d7e22a2f-2e75-4433-867a-e074d5ec759b"
+        },
+        {
+          "name": "Csányi Attila",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/csanyi-attila",
+          "id": "d23d784a-44be-4a4b-a43a-957b1b3a841b"
+        },
+        {
+          "name": "Csányi Erika",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/csanyi-erika",
+          "id": "c9495063-76e4-4eee-80fb-5fd3d4df55bc"
+        },
+        {
+          "name": "Csányi Gabriella",
+          "link": null,
+          "id": "23c4197e-9a52-448c-b356-ad8575e8d7d7"
+        }
+      ],
+      "date": "2023.09.22",
+      "details": "Csányi Sándor OTP-vezér villányi érdekeltsége, a Csányi Pincészet Zrt., 2017-ben 183 millió, 2021-ben pedig 150 millió forint vissza nem térítendő európai uniós támogatást nyert el. Eredetileg Teleki Zsigmond alapította a 19. század végén, az ő nevét viselik a pincészet által értékesített borok.",
+      "en": {
+        "name": null,
+        "link": null,
+        "details": "Csányi Winery is owned by the government-friendly billionaire Sándor Csányi since 2002. The winery received more than 300 million HUF from EU funds.",
+        "type": "winery"
+      },
+      "de": {
+        "name": null,
+        "link": null,
+        "details": null,
+        "type": "Weingut"
+      },
+      "picture": "https://villanyiborvidek.hu/images/lp/slider/DSCF0660.jpg"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [45.874163, 18.455377]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": "409",
+      "address": "Budapest, Apáczai Csere János u. 4., 1052",
+      "company": {
+        "name": "Duna Szálloda Zrt.",
+        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/duna-szalloda-zrt"
+      },
+      "name": "Marriott Hotel",
+      "city": "Budapest",
+      "type": "szálloda",
+      "link": "https://turizmus.com/cikk/szallashely/budapest-marriott-hotel-tulajdonosvaltas-bdpst-group-tiborcz-istvan",
+      "mainOligarch": [],
+      "mainCEO": [],
+      "oligarchs": [],
+      "ceos": [],
+      "date": "2025.10.01.",
+      "details": "A szálloda üzemeltetője a Tiborcz Istvánhoz köthető Gránit Alapkezelő által kezelt Diorit Magántőkealap tulajdona.",
+      "en": {
+        "name": null,
+        "link": null,
+        "details": null,
+        "type": "hotel"
+      },
+      "de": {
+        "name": null,
+        "link": null,
+        "details": null,
+        "type": "Hotel"
+      },
+      "picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Budapest_Marriott_Hotel_2014_1.jpg/1280px-Budapest_Marriott_Hotel_2014_1.jpg"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [47.49471449, 19.04968889]
+    }
+  }
+]
