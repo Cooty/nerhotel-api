@@ -9,13 +9,13 @@
 function handleSheetEdit(e) {
   if (!e || !e.source) {
     Logger.log(
-      "This function must be triggered by editing a cell in the spreadsheet.",
-    );
-    return;
+      "This function must be triggered by editing a cell in the spreadsheet."
+    )
+    return
   }
 
-  setLastUpdatedAtColumn(e);
-  triggerCacheBuster();
+  setLastUpdatedAtColumn(e)
+  triggerCacheBuster()
 }
 
 /**
@@ -24,16 +24,16 @@ function handleSheetEdit(e) {
  * @param e [Edit event](https://developers.google.com/apps-script/guides/triggers/events#edit)
  */
 function setLastUpdatedAtColumn(e) {
-  const sheet = e.source.getActiveSheet();
-  const row = e.range.getRow();
-  const col = e.range.getColumn();
-  const dateColumn = 43; // AQ column
+  const sheet = e.source.getActiveSheet()
+  const row = e.range.getRow()
+  const col = e.range.getColumn()
+  const dateColumn = 43 // AQ column
 
   // Update the timestamp in column AQ (if the edit was not in AQ and not on header)
   if (col !== dateColumn && row > 1) {
-    const cell = sheet.getRange(row, dateColumn);
-    cell.setValue(new Date());
-    cell.setNumberFormat("yyyy-mm-dd");
+    const cell = sheet.getRange(row, dateColumn)
+    cell.setValue(new Date())
+    cell.setNumberFormat("yyyy-mm-dd")
   }
 }
 
@@ -45,34 +45,34 @@ function setLastUpdatedAtColumn(e) {
 function triggerCacheBuster() {
   // WEBHOOK_URL and WEBHOOK_SECRET are expected to be set in Script Properties
   const WEBHOOK_URL =
-    PropertiesService.getScriptProperties().getProperty("WEBHOOK_URL");
+    PropertiesService.getScriptProperties().getProperty("WEBHOOK_URL")
 
   if (!WEBHOOK_URL) {
-    Logger.log("Error: WEBHOOK_URL is not defined in Script Properties.");
-    return;
+    Logger.log("Error: WEBHOOK_URL is not defined in Script Properties.")
+    return
   }
 
   const WEBHOOK_SECRET =
-    PropertiesService.getScriptProperties().getProperty("WEBHOOK_SECRET");
+    PropertiesService.getScriptProperties().getProperty("WEBHOOK_SECRET")
 
   if (!WEBHOOK_SECRET) {
-    Logger.log("Error: WEBHOOK_SECRET is not defined in Script Properties.");
-    return;
+    Logger.log("Error: WEBHOOK_SECRET is not defined in Script Properties.")
+    return
   }
 
   const options = {
     method: "post",
     headers: {
-      "X-Webhook-Secret": WEBHOOK_SECRET,
+      "X-Webhook-Secret": WEBHOOK_SECRET
     },
-    muteHttpExceptions: true,
-  };
+    muteHttpExceptions: true
+  }
 
   try {
-    const response = UrlFetchApp.fetch(WEBHOOK_URL, options);
-    Logger.log("Status Code: " + response.getResponseCode());
-    Logger.log("Cache Buster Response: " + response.getContentText());
+    const response = UrlFetchApp.fetch(WEBHOOK_URL, options)
+    Logger.log("Status Code: " + response.getResponseCode())
+    Logger.log("Cache Buster Response: " + response.getContentText())
   } catch (error) {
-    Logger.log("Failed to call Cache Buster: " + error.toString());
+    Logger.log("Failed to call Cache Buster: " + error.toString())
   }
 }

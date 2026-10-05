@@ -6,7 +6,35 @@ on:
       - master
 
 jobs:
+  quality:
+    name: Quality gate
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: "lts/Jod"
+
+      - name: Install dependencies
+        run: npm ci --fund=false --audit=false
+
+      - name: ESLint
+        run: npm run lint
+
+      - name: Prettier
+        run: npm run format:check
+
+      - name: TypeScript type checking
+        run: npm run typecheck
+
+      - name: Unit tests
+        run: npm test -- --ci --runInBand
+
   deploy:
+    needs: quality
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
