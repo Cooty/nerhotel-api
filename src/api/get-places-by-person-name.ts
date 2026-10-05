@@ -1,10 +1,5 @@
 import { Hono } from "hono/tiny"
-import { AppConfig } from "../config/app-config"
-import {
-  getAllPlacesAffiliatedWithPerson,
-  fetchSheetDataAsPlaces
-} from "../utils"
-import { Places } from "../types"
+import { getAllPlacesAffiliatedWithPerson, getCachedPlaces } from "../utils"
 
 const app = new Hono<{ Bindings: CloudflareBindings }>()
 
@@ -14,19 +9,7 @@ app.get("/", async (c) => {
     if (!name) {
       return c.json({ message: `Invalid name: ${name}` }, 400)
     }
-    let allPlaces = (await c.env.DATA_CACHE.get(
-      AppConfig.cacheKeys.allPlaces,
-      "json"
-    )) as Places
-    if (!allPlaces) {
-      allPlaces = await fetchSheetDataAsPlaces(AppConfig.csvUrl)
-      c.executionCtx.waitUntil(
-        c.env.DATA_CACHE.put(
-          AppConfig.cacheKeys.allPlaces,
-          JSON.stringify(allPlaces)
-        )
-      )
-    }
+    const allPlaces = await getCachedPlaces(c)
 
     const allAffiliatedPlaces = getAllPlacesAffiliatedWithPerson(
       allPlaces,

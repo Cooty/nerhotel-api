@@ -1,27 +1,12 @@
 import { Hono } from "hono/tiny"
 
-import { AppConfig } from "../config/app-config"
-import { fetchSheetDataAsPlaces, findProperty } from "../utils"
-
-import type { Places } from "../types"
+import { getCachedPlaces, findProperty } from "../utils"
 
 const app = new Hono<{ Bindings: CloudflareBindings }>()
 
 app.get("/", async (c) => {
   try {
-    let allPlaces: Places = (await c.env.DATA_CACHE.get(
-      AppConfig.cacheKeys.allPlaces,
-      "json"
-    )) as Places
-    if (!allPlaces) {
-      allPlaces = await fetchSheetDataAsPlaces(AppConfig.csvUrl)
-      c.executionCtx.waitUntil(
-        c.env.DATA_CACHE.put(
-          AppConfig.cacheKeys.allPlaces,
-          JSON.stringify(allPlaces)
-        )
-      )
-    }
+    const allPlaces = await getCachedPlaces(c)
     const query = c.req.query("q")
 
     if (!query) {
