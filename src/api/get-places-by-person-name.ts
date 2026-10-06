@@ -1,5 +1,10 @@
 import { Hono } from "hono/tiny"
-import { getAllPlacesAffiliatedWithPerson, getCachedPlaces } from "../utils"
+import {
+  getAllPlacesAffiliatedWithPerson,
+  getCachedPlaces,
+  makeSuccessResponse,
+  makeErrorResponse
+} from "../utils"
 
 const app = new Hono<{ Bindings: CloudflareBindings }>()
 
@@ -16,16 +21,10 @@ app.get("/", async (c) => {
       name
     )
 
-    return c.json(allAffiliatedPlaces, 200, {
-      // Caching will be done on the client's application side
-      // and the server-side cache is controlled manually (KV Storage + cache buster webhook)
-      // so we need to ensure that this data is not cached in the browser
-      "Cache-Control": "no-cache"
-    })
+    return makeSuccessResponse(c, allAffiliatedPlaces)
   } catch (error) {
     console.error(error)
-    const isError = error instanceof Error
-    return c.json({ message: isError ? error.message : "Unknown error" }, 500)
+    return makeErrorResponse(c, error)
   }
 })
 
