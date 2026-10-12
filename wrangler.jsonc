@@ -32,7 +32,7 @@
       // replace the resulting ID
       "id": "fe7db42c29b842c586766fd8dcfa92f0"
     }
-  ]
+  ],
   /**
    * Smart Placement
    * https://developers.cloudflare.com/workers/configuration/smart-placement/#smart-placement
@@ -50,7 +50,7 @@
    * Note: Use secrets to store sensitive data.
    * https://developers.cloudflare.com/workers/configuration/secrets/
    */
-  // "vars": {  "MY_VARIABLE": "production_value" }
+  "vars": { "PRODUCTION_ROOT_DOMAIN": "nerhotel.hu" }
   /**
    * Service Bindings (communicate between multiple Workers)
    * https://developers.cloudflare.com/workers/wrangler/configuration/#service-bindings
