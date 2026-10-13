@@ -10,19 +10,12 @@ import getPlacesByPersonName from "./api/get-places-by-person-name"
 import clearCache from "./webhooks/clear-cache"
 
 const api = new Hono<{ Bindings: CloudflareBindings }>()
-const webhooks = new Hono()
+const webhooks = new Hono<{ Bindings: CloudflareBindings }>()
 const app = new Hono<{ Bindings: CloudflareBindings }>()
-
-app.use(
-  rateLimiter<{ Bindings: CloudflareBindings }>({
-    binding: (c) => c.env.NERHOTEL_API_RATE_LIMITER,
-    keyGenerator: (c) => c.req.header("cf-connecting-ip") ?? ""
-  })
-)
 
 api.use("/*", async (c, next) => {
   const productionDomain = c.env.PRODUCTION_ROOT_DOMAIN
-  console.log(productionDomain)
+
   const corsMiddleware = cors({
     origin: (origin) => {
       // If there's no origin header (like server-to-server or curl requests), handle gracefully
@@ -53,6 +46,13 @@ api.use("/*", async (c, next) => {
 
   return corsMiddleware(c, next)
 })
+
+api.use(
+  rateLimiter<{ Bindings: CloudflareBindings }>({
+    binding: (c) => c.env.NERHOTEL_API_RATE_LIMITER,
+    keyGenerator: (c) => c.req.header("cf-connecting-ip") ?? ""
+  })
+)
 
 api.route("/places/search", searchPlaces)
 api.route("/places/:id{[0-9]+}", getPlaceById)
