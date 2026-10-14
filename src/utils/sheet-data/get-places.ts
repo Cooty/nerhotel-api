@@ -51,17 +51,17 @@ export function getPlaces(csvRowsAsObjects: Record<string, string>[]): Places {
       {
         name: csvRow["T1 OL"],
         link: getNullableCellValue(csvRow["T1_link"]),
-        id: getNullableCellValue(csvRow["T1_ID"]) ?? crypto.randomUUID()
+        id: getNullableCellValue(csvRow["T1_ID"])
       },
       {
         name: csvRow["T2 OL"],
         link: getNullableCellValue(csvRow["T2_link"]),
-        id: getNullableCellValue(csvRow["T2_ID"]) ?? crypto.randomUUID()
+        id: getNullableCellValue(csvRow["T2_ID"])
       },
       {
         name: csvRow["T3 OL"],
         link: getNullableCellValue(csvRow["T3_link"]),
-        id: getNullableCellValue(csvRow["T3_ID"]) ?? crypto.randomUUID()
+        id: getNullableCellValue(csvRow["T3_ID"])
       }
     ]
     /** @type {{name: string, link: string}[]} */
@@ -69,27 +69,27 @@ export function getPlaces(csvRowsAsObjects: Record<string, string>[]): Places {
       {
         name: csvRow["IT1"],
         link: getNullableCellValue(csvRow["IT1_link"]),
-        id: getNullableCellValue(csvRow["IT1_ID"]) ?? crypto.randomUUID()
+        id: getNullableCellValue(csvRow["IT1_ID"])
       },
       {
         name: csvRow["IT2"],
         link: getNullableCellValue(csvRow["IT2_link"]),
-        id: getNullableCellValue(csvRow["IT2_ID"]) ?? crypto.randomUUID()
+        id: getNullableCellValue(csvRow["IT2_ID"])
       },
       {
         name: csvRow["IT3"],
         link: getNullableCellValue(csvRow["IT3_link"]),
-        id: getNullableCellValue(csvRow["IT3_ID"]) ?? crypto.randomUUID()
+        id: getNullableCellValue(csvRow["IT3_ID"])
       },
       {
         name: csvRow["IT4"],
         link: getNullableCellValue(csvRow["IT4_link"]),
-        id: getNullableCellValue(csvRow["IT4_ID"]) ?? crypto.randomUUID()
+        id: getNullableCellValue(csvRow["IT4_ID"])
       },
       {
         name: csvRow["IT5"],
         link: getNullableCellValue(csvRow["IT5_link"]),
-        id: getNullableCellValue(csvRow["IT5_ID"]) ?? crypto.randomUUID()
+        id: getNullableCellValue(csvRow["IT5_ID"])
       }
     ]
     const place = {

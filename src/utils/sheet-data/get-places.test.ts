@@ -245,7 +245,7 @@ describe("getPlaces", () => {
   })
 
   it.each(["", "   ", "#N/A", undefined])(
-    "generates distinct UUIDs for missing person IDs (%j)",
+    "missing person IDs should be null (%j)",
     (value) => {
       const row = makeRow({ IT1: "!!! CEO" })
       for (const column of ["T1_ID", "IT1_ID"]) {
@@ -253,15 +253,15 @@ describe("getPlaces", () => {
         else row[column] = value
       }
       const places = getPlaces([row])
+
       expect(places).toHaveLength(1)
       const properties = places[0].properties
-      const uuidPattern =
-        /^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/
-      expect(properties.oligarchs[0].id).toMatch(uuidPattern)
-      expect(properties.ceos[0].id).toMatch(uuidPattern)
-      expect(properties.oligarchs[0].id).not.toBe(properties.ceos[0].id)
-      expect(properties.mainOligarch[0].id).toBe(properties.oligarchs[0].id)
-      expect(properties.mainCEO[0].id).toBe(properties.ceos[0].id)
+
+      expect(properties.oligarchs[0].id).toBe(null)
+      expect(properties.ceos[0].id).toBe(null)
+      expect(properties.oligarchs[0].id).toEqual(properties.ceos[0].id)
+      expect(properties.mainOligarch[0].id).toEqual(properties.oligarchs[0].id)
+      expect(properties.mainCEO[0].id).toEqual(properties.ceos[0].id)
     }
   )
 
