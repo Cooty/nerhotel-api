@@ -21,6 +21,13 @@ app.get("/", async (c) => {
       name
     )
 
+    if (allAffiliatedPlaces.length === 0) {
+      return c.json(
+        { message: `No places can be associated with the name: "${name}"` },
+        404
+      )
+    }
+
     return makeSuccessResponse(c, allAffiliatedPlaces)
   } catch (error) {
     console.error(error)
